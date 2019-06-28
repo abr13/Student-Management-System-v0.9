@@ -33,7 +33,6 @@ namespace Student_Management_System
         
         private void LogoutButton_Click(object sender, EventArgs e)
         {
-            //this.Hide();
             this.Dispose();
             welcomeForm.Show();
             students_UC.Dispose();
@@ -50,7 +49,6 @@ namespace Student_Management_System
             student_UC.Dock = DockStyle.Fill;
             student_UC.BringToFront();
 
-            //panel1.Width = ExamsButton.Width;
             panel1.Left = ExamsButton.Left;
             panel1.Show();
         }
@@ -61,7 +59,6 @@ namespace Student_Management_System
             subjects_UC.Dock = DockStyle.Fill;
             subjects_UC.BringToFront();
 
-            //panel1.Width = SubjectsButton.Width;
             panel1.Left = SubjectsButton.Left;
             panel1.Show();
         }
@@ -72,7 +69,6 @@ namespace Student_Management_System
             classes_UC.Dock = DockStyle.Fill;
             classes_UC.BringToFront();
 
-            //panel1.Width = ClassesButton.Width;
             panel1.Left = ClassesButton.Left;
             panel1.Show();
         }
@@ -83,7 +79,6 @@ namespace Student_Management_System
             section_UC.Dock = DockStyle.Fill;
             section_UC.BringToFront();
 
-            //panel1.Width = SectionsButton.Width;
             panel1.Left = SectionsButton.Left;
             panel1.Show();
         }
@@ -94,7 +89,6 @@ namespace Student_Management_System
             students_UC.Dock = DockStyle.Fill;
             students_UC.BringToFront();
 
-            //panel1.Width = StudentsButton.Width;
             panel1.Left = StudentsButton.Left;
             panel1.Show();
         }
@@ -110,22 +104,22 @@ namespace Student_Management_System
             settings_UC.Dock = DockStyle.Fill;
             settings_UC.BringToFront();
 
-            //panel1.Width = SettingsButton.Width;
             panel1.Left = SettingsButton.Left;
             panel1.Show();
         }     
 
         private void AboutButton_Click(object sender, EventArgs e)
         {
-            //ContentsPanel.Controls.Add(about_UC);
-            //about_UC.Dock = DockStyle.Fill;
-            //about_UC.BringToFront();
             AboutBox aboutBox = new AboutBox();
             aboutBox.Show();
-
-            //panel1.Width = AboutButton.Width;
+      
             panel1.Left = AboutButton.Left;
             panel1.Show();
+        }
+
+        private void ContentsPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

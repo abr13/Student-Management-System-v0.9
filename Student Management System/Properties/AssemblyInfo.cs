@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Student Management System")]
-[assembly: AssemblyDescription("ABOUT THE DEVELOPER : The name of developer of this software is Abdur Rahman, student of Computer Science and Engineering(CSE) under Visvesvaraya Technological University(VTU), Belguam ,Karnataka. He is the resident of Kolkata, West Bengal. He has done several small projects based on Windows applications (like Library Management System), Web based applications(like Restaurant Management System) and also based on some new technology like Internet of Things(IoT).Contact the developer via Email : abdurrahman131197@gmail.com or on Whatsapp : 9748226049.")]
+[assembly: AssemblyDescription("ABOUT THE DEVELOPER : The name of developer of this software is Abdur Rahman (abr), student of Computer Science and Engineering(CSE) under Visvesvaraya Technological University(VTU), Belguam ,Karnataka. He is the resident of Kolkata, West Bengal. He has done several small projects based on Windows applications (like Library Management System), Web based applications(like Restaurant Management System) and also based on some new technology like Internet of Things(IoT).Contact the developer via Email : abdurrahman131197@gmail.com.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ABR's The Invisible")]
 [assembly: AssemblyProduct("Student Management System")]

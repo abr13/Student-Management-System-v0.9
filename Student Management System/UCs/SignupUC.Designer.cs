@@ -290,7 +290,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(198, 2);
             this.panel3.TabIndex = 72;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel1
             // 
@@ -299,7 +298,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(198, 2);
             this.panel1.TabIndex = 72;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
@@ -308,7 +306,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(198, 2);
             this.panel2.TabIndex = 72;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel4
             // 
@@ -317,7 +314,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(198, 2);
             this.panel4.TabIndex = 72;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // panel5
             // 
@@ -326,7 +322,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(198, 2);
             this.panel5.TabIndex = 72;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // panel6
             // 

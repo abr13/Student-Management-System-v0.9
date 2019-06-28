@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.ButtonsPanel = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.AdminNameLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.SettingsButton = new System.Windows.Forms.Button();
             this.AboutButton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.AdminNameLabel = new System.Windows.Forms.Label();
             this.StudentsButton = new System.Windows.Forms.Button();
             this.LogoutButton = new System.Windows.Forms.Button();
             this.SectionsButton = new System.Windows.Forms.Button();
@@ -44,11 +45,10 @@
             this.ContentsPanel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.ButtonsPanel.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.ContentsPanel.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // ButtonsPanel
@@ -70,6 +70,51 @@
             this.ButtonsPanel.Name = "ButtonsPanel";
             this.ButtonsPanel.Size = new System.Drawing.Size(890, 55);
             this.ButtonsPanel.TabIndex = 29;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Fuchsia;
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.AdminNameLabel);
+            this.panel2.Location = new System.Drawing.Point(606, 10);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(186, 31);
+            this.panel2.TabIndex = 34;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(41, 7);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 15);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "User :";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Student_Management_System.Properties.Resources.if_user_man_678132;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(22, 19);
+            this.pictureBox1.TabIndex = 30;
+            this.pictureBox1.TabStop = false;
+            // 
+            // AdminNameLabel
+            // 
+            this.AdminNameLabel.AutoSize = true;
+            this.AdminNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdminNameLabel.ForeColor = System.Drawing.Color.White;
+            this.AdminNameLabel.Location = new System.Drawing.Point(85, 4);
+            this.AdminNameLabel.Name = "AdminNameLabel";
+            this.AdminNameLabel.Size = new System.Drawing.Size(101, 22);
+            this.AdminNameLabel.TabIndex = 29;
+            this.AdminNameLabel.Text = "Name Here";
+            this.AdminNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AdminNameLabel.Click += new System.EventHandler(this.AdminNameLabel_Click);
             // 
             // panel1
             // 
@@ -123,40 +168,6 @@
             this.AboutButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.AboutButton.UseVisualStyleBackColor = false;
             this.AboutButton.Click += new System.EventHandler(this.AboutButton_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Student_Management_System.Properties.Resources.if_user_man_678132;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(22, 19);
-            this.pictureBox1.TabIndex = 30;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(41, 7);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 15);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "User :";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // AdminNameLabel
-            // 
-            this.AdminNameLabel.AutoSize = true;
-            this.AdminNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminNameLabel.ForeColor = System.Drawing.Color.White;
-            this.AdminNameLabel.Location = new System.Drawing.Point(85, 4);
-            this.AdminNameLabel.Name = "AdminNameLabel";
-            this.AdminNameLabel.Size = new System.Drawing.Size(101, 22);
-            this.AdminNameLabel.TabIndex = 29;
-            this.AdminNameLabel.Text = "Name Here";
-            this.AdminNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AdminNameLabel.Click += new System.EventHandler(this.AdminNameLabel_Click);
             // 
             // StudentsButton
             // 
@@ -301,6 +312,7 @@
             this.ContentsPanel.Name = "ContentsPanel";
             this.ContentsPanel.Size = new System.Drawing.Size(890, 480);
             this.ContentsPanel.TabIndex = 30;
+            this.ContentsPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ContentsPanel_Paint);
             // 
             // label2
             // 
@@ -324,17 +336,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome to Student Management System";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Fuchsia;
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.AdminNameLabel);
-            this.panel2.Location = new System.Drawing.Point(606, 10);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(186, 31);
-            this.panel2.TabIndex = 34;
-            // 
             // MainSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -350,11 +351,11 @@
             this.Text = "Student Management System";
             this.ButtonsPanel.ResumeLayout(false);
             this.ButtonsPanel.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ContentsPanel.ResumeLayout(false);
             this.ContentsPanel.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
